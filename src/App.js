@@ -4,6 +4,7 @@ import Saludar from "./componentes/Saludar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Button, Accordion, Card, Alert } from "react-bootstrap";
+import { ReactComponent as ReactIcon } from "./assets/react.svg";
 
 function App() {
  return (
@@ -40,6 +41,7 @@ function App() {
     </Card>
    </Accordion>
    <Alert variant="primary">Hola</Alert>
+   <ReactIcon />
   </div>
  );
 }
