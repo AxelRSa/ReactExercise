@@ -1,16 +1,12 @@
 import React from "react";
 
 export default function Saludar(props) {
- console.log(props.userinfo);
+ console.log(props);
  return (
   <div>
-   <h2>
-    {/* Meter variables con el props normal */}
-    {/* Hola {props.name}, y tienes {props.edad} años */}
-    {/* Meter variables con el props a través de un objeto */}
-    Hola {props.userinfo.nombre}, y tienes {props.userinfo.edad} años, su color
-    favorito es el {props.userinfo.color}
-   </h2>
+   <button onClick={() => props.saludarFn(props.userInfo.nombre)}>
+    Saludar
+   </button>
   </div>
  );
 }
